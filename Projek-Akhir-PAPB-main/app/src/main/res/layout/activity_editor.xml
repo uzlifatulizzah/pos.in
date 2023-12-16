@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="14dp">
+        <TextView
+            android:id="@+id/titleapp"
+            android:layout_width="197dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:fontFamily="@font/pbold"
+            android:gravity="center"
+            android:text="Pos.in"
+            android:textColor="#FFB000"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+        <View
+            android:id="@+id/pembatas"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/titleapp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#545454"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/pbold"
+            android:textStyle="bold"
+            android:text="Masukkan Data Paket"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@color/white">
+            <EditText
+                android:id="@+id/nama_penerima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Penerima"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxBackgroundColor="@color/white">
+            <EditText
+                android:id="@+id/nama_pengirim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Pengirim"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@color/white">
+            <EditText
+                android:id="@+id/Alamat_penerima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat Penerima"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@color/white">
+            <EditText
+                android:id="@+id/Jenis_pengiriman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jenis Pengiriman"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/preguler"
+            android:textColor="@color/black"
+            android:text="Tambahkan Bukti Foto Paket"/>
+
+        <ImageView
+            android:id="@+id/buktifoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="15dp"
+            android:background="#ccc"
+            android:src="@drawable/baseline_image_24"
+            android:scaleType="center"
+            android:contentDescription="Menambahkan foto" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pmedium"
+            android:backgroundTint="#004225"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:text="Simpan"/>
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pmedium"
+            android:textStyle="bold"
+            android:backgroundTint="#80004225"
+            android:layout_marginTop="10dp"
+            android:text="Kembali"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "866980545528",
+    "project_id": "projectakhir-ca5b8",
+    "storage_bucket": "projectakhir-ca5b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866980545528:android:48c83a4746e5069eec4c0d",
+        "android_client_info": {
+          "package_name": "zfr.mobile.projectpapb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0LF8kruJdkTB9NZ6EMDtUh9Ax6R4Oo3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
